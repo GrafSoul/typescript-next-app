@@ -1,0 +1,25 @@
+{
+  "name": "typescript-next-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GrafSoul/typescript-next-app.git",
+  "author": "GrafSoul <grafsoul@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.23",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@types/react": "^17.0.39",
+    "typescript": "^4.5.5"
+  }
+}
