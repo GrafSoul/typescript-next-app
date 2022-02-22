@@ -8,18 +8,20 @@
   "scripts": {
     "build": "next build",
     "start": "next start",
-    "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
+    "serve": "ts-node -O {\"\"\"module\"\"\":\"\"\"commonjs\"\"\"} ./server/index.ts",
     "dev": "concurrently --kill-others \"yarn serve\" \"next\""
   },
   "dependencies": {
     "@types/styled-components": "^5.1.23",
     "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "ts-node": "^10.5.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.18",
