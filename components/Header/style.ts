@@ -5,6 +5,7 @@ export const Container = styled.header`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 5;
 
   height: 50px;
   padding: 7px 0;
@@ -21,6 +22,7 @@ export const Logo = styled.h1`
     text-decoration: none;
     color: black;
   }
+
   a:hover {
     color: ${(p) => p.theme.colors.pink};
   }
