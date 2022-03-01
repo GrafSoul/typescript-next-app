@@ -1,18 +1,18 @@
-import React from "react";
-import Head from "next/head";
-import { Post, Category } from "../shared/types";
-import { Feed } from "../components/Feed";
-import { fetchPosts, fetchCategories } from "../api/summary";
+import React from "react"
+import Head from "next/head"
+import { Post, Category } from "../shared/types"
+import { Feed } from "../components/Feed"
+import { fetchPosts, fetchCategories } from "../api/summary"
 
 type FrontProps = {
-  posts: Post[];
-  categories: Category[];
-};
+  posts: Post[]
+  categories: Category[]
+}
 
 export async function getStaticProps() {
-  const categories = await fetchCategories();
-  const posts = await fetchPosts();
-  return { props: { posts, categories } };
+  const categories = await fetchCategories()
+  const posts = await fetchPosts()
+  return { props: { posts, categories } }
 }
 
 export default function Front({ posts, categories }: FrontProps) {
@@ -26,5 +26,5 @@ export default function Front({ posts, categories }: FrontProps) {
         <Feed posts={posts} categories={categories} />
       </main>
     </>
-  );
+  )
 }

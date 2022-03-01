@@ -1,15 +1,19 @@
-import Link from "next/link";
-import { Post as PostType } from "../../shared/types";
-import { PostCard } from "../Post";
-import { Grid, Title, MoreLink } from "./style";
+import Link from "next/link"
+import { Post as PostType } from "../../shared/types"
+import { PostCard } from "../Post"
+import { Grid, Title, MoreLink } from "./style"
 
 type SectionProps = {
-  title: string;
-  posts: PostType[];
-  isCompact?: boolean;
-};
+  title: string
+  posts: PostType[]
+  isCompact?: boolean
+}
 
-export const Section = ({ title, posts, isCompact = false }: SectionProps) => {
+export const Section = ({
+  title,
+  posts,
+  isCompact = false
+}: SectionProps) => {
   return (
     <section>
       <Title>{title}</Title>
@@ -25,5 +29,5 @@ export const Section = ({ title, posts, isCompact = false }: SectionProps) => {
         </Link>
       )}
     </section>
-  );
-};
+  )
+}
