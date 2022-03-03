@@ -1,6 +1,6 @@
-import { AnyAction } from "redux"
-import { HYDRATE } from "next-redux-wrapper"
+import { AnyAction } from "redux";
+import { HYDRATE } from "next-redux-wrapper";
 
 export interface HydrateAction extends AnyAction {
-  type: typeof HYDRATE
+  type: typeof HYDRATE;
 }

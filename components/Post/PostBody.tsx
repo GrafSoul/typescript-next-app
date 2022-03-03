@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { Post } from "../../shared/types"
-import { Breadcrumbs } from "../../components/Breadcrumbs"
-import { Title, Figure, Content, Meta } from "./PostBodyStyle"
+import Link from "next/link";
+import { Post } from "../../shared/types";
+import { Breadcrumbs } from "../../components/Breadcrumbs";
+import { Title, Figure, Content, Meta } from "./PostBodyStyle";
 
 type PostBodyProps = {
-  post: Post
-}
+  post: Post;
+};
 
 export const PostBody = ({ post }: PostBodyProps) => {
   return (
@@ -28,5 +28,5 @@ export const PostBody = ({ post }: PostBodyProps) => {
         <a href={post.source}>Source</a>
       </Meta>
     </div>
-  )
-}
+  );
+};

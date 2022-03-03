@@ -1,13 +1,13 @@
-import React from "react"
-import Head from "next/head"
-import { AppContext } from "next/app"
-import { ThemeProvider } from "styled-components"
+import React from "react";
+import Head from "next/head";
+import { AppContext } from "next/app";
+import { ThemeProvider } from "styled-components";
 
-import { Header } from "../components/Header"
-import { Footer } from "../components/Footer"
-import { Center } from "../components/Center"
-import { GlobalStyle, theme } from "../shared/theme"
-import { store } from "../store"
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { Center } from "../components/Center";
+import { GlobalStyle, theme } from "../shared/theme";
+import { store } from "../store";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,15 +25,13 @@ function MyApp({ Component, pageProps }) {
       </main>
       <Footer />
     </ThemeProvider>
-  )
+  );
 }
 
 MyApp.getInitialProps = async ({ Component, ctx }: AppContext) => ({
   pageProps: {
-    ...(Component.getInitialProps
-      ? await Component.getInitialProps(ctx)
-      : {})
-  }
-})
+    ...(Component.getInitialProps ? await Component.getInitialProps(ctx) : {}),
+  },
+});
 
-export default store.withRedux(MyApp)
+export default store.withRedux(MyApp);

@@ -1,8 +1,8 @@
-import { Center } from "../Center"
-import { Container } from "./style"
+import { Center } from "../Center";
+import { Container } from "./style";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <Container>
@@ -10,5 +10,5 @@ export const Footer = () => {
         <a href="https://newline.co">Newline.co</a> {currentYear}
       </Center>
     </Container>
-  )
-}
+  );
+};

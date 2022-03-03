@@ -1,10 +1,10 @@
-import Link from "next/link"
-import { Post } from "../../shared/types"
-import { Container } from "./style"
+import Link from "next/link";
+import { Post } from "../../shared/types";
+import { Container } from "./style";
 
 type BreadcrumbsProps = {
-  post: Post
-}
+  post: Post;
+};
 
 export const Breadcrumbs = ({ post }: BreadcrumbsProps) => {
   return (
@@ -17,5 +17,5 @@ export const Breadcrumbs = ({ post }: BreadcrumbsProps) => {
         <a>{post.category}</a>
       </Link>
     </Container>
-  )
-}
+  );
+};
